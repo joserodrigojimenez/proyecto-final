@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia del Equipo y Jugadores</title>
+  <style>
+    body {
+      background-color:black;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+      padding: 250px;
+    }
+
+    h1 {
+      color: blue;
+      font-size: 40px;
+    }
+
+    h2 {
+      color: blue;
+      font-size: 40px;
+    }
+
+    p {
+      color: white;
+    }
+    ul{
+        color: white;
+
+    }
+    body {
+      background-image: url('https://img.freepik.com/fotos-premium/inmersion-fondo-mediatico-totalmente-interactivo_913287-1158.jpg');
+      background-size: cover  ; 
+      background-position: center px; 
+      background-repeat: no-repeat  ; 
+    }
+
+  </style>
+</head>
+<body>
+    <h1>paso 1</h1> 
+    <p>después de instalar Windows Server, debe agregar la función del servidor DNS. Puede hacerlo a través del Administrador del servidor.
+        Abra el Administrador del servidor.
+        Haga clic en "Administrar" y luego seleccione "Agregar funciones y características".
+        Siga el asistente y seleccione "Servidor DNS" de la lista de funciones para instalar.</p>
+  <img src="img/1   (1.).jpeg" width="450">
+  <img src="img/1   (2.).jpeg" width="450">
+  <img src="img/1   (3.).jpeg" width="450">
+  <img src="img/1   (4.).jpeg" width="450">
+  <img src="img/1   (5.).jpeg" width="450">
+  <img src="img/1   (6.).jpeg" width="450">
+  <img src="img/1   (7.).jpeg" width="450">
+  <img src="img/1   (8.).jpeg" width="450">
+  <img src="img/1   (9.).jpeg" width="450">
+
+  <h1>paso 2 Configurar DNS:  </h1>
+
+  <p>
+    una vez instalada la función DNS, debes configurarla:
+
+    Abra el Administrador de DNS desde el menú Herramientas o mediante el Administrador del servidor.
+    Cree una zona de búsqueda directa para su dominio. Esto asignará nombres de dominio a direcciones IP.
+    Opcionalmente, cree zonas de búsqueda inversa para la resolución de direcciones IP a nombres de dominio (registros PTR).
+    Configure su servidor DNS para utilizar reenviadores si es necesario .
+  </p>
+  <img src="img/1   (10.).jpeg" width="450">
+  <img src="img/1   (11.).jpeg" width="450">
+  <img src="img/1   (12.).jpeg" width="450">
+  <img src="img/1   (13.).jpeg" width="450">
+  <img src="img/1   (14.).jpeg" width="450">
+  <img src="img/1   (15.).jpeg" width="450">
+  <img src="img/1   (16.).jpeg" width="450">
+  <img src="img/1   (21.).jpeg" width="450">
+  <img src="img/1   (26.).jpeg" width="450">
+  <p>
+    Abre el "Símbolo del sistema" en tu servidor Windows Server.
+
+Para probar la resolución de nombres utilizando la dirección IP 192.168.100.10, puedes usar el comando ping:
+
+bash
+Copy code
+ping 192.168.100.10
+Este comando intentará hacer ping a la dirección IP especificada y verificar si hay una respuesta del host.
+Para probar la resolución de nombres utilizando un nombre de dominio como "www.windows.net.bo", puedes usar el comando ping:
+bash
+Copy code
+ping www.windows.net.bo
+Este comando intentará hacer ping al nombre de dominio especificado y verificar si hay una respuesta del servidor.
+Para realizar una consulta de DNS utilizando el comando nslookup, puedes ejecutar:
+bash
+Copy code
+nslookup windows.net.bo
+Esto realizará una consulta DNS para el nombre de dominio especificado y mostrará la dirección IP asociada.
+También puedes realizar una consulta inversa de DNS utilizando nslookup para una dirección IP, ejecutando:
+bash
+Copy code
+nslookup 192.168.100.10
+Esto intentará realizar una búsqueda inversa de DNS para la dirección IP especificada y mostrará el nombre de dominio asociado, si está configurado correctamente en el servidor DNS.
+
+Al ejecutar estos comandos, podrás probar el funcionamiento del servidor DNS y verificar si está resolviendo correctamente los nombres de dominio y las direcciones IP en tu red. Esto te ayudará a identificar cualquier problema de configuración o conectividad en el servidor DNS.
+  </p>
+  <img src="img/1   (23.).jpeg" width="450">
+  <img src="img/1   (24.).jpeg" width="450">
+  <img src="img/1   (25.).jpeg" width="450">
+  <p>
+    Abre el "Panel de control" desde el menú Inicio.
+
+    Haz clic en "Redes e Internet" o "Redes y recursos compartidos", dependiendo de la versión de Windows Server que estés utilizando.
+    
+    Haz clic en "Centro de redes y recursos compartidos".
+    
+    En el lado izquierdo de la ventana, haz clic en "Cambiar configuración del adaptador".
+    
+    Se abrirá una ventana que muestra tus conexiones de red. Busca la conexión que corresponde a tu red LAN. Por lo general, tiene el nombre de "Conexión de área local" o "Ethernet".
+    
+    Haz clic derecho en la conexión de red LAN y selecciona "Estado" o "Propiedades".
+    
+    En la ventana de estado o propiedades de la conexión, busca la información relacionada con la dirección IP. Deberías poder ver la dirección IP asignada a tu servidor en la red LAN.
+    
+    Si necesitas más detalles sobre la configuración de red, como la máscara de subred, la puerta de enlace predeterminada o los servidores DNS, también podrás encontrar esa información en esta ventana.
+  </p>
+  <img src="img/1   (17.).jpeg" width="450">
+  <img src="img/1   (18.).jpeg" width="450">
+  <img src="img/1   (19.).jpeg" width="450">
+  <img src="img/1   (20.).jpeg" width="450">
+
+
+  <h2>Instale los Servicios de dominio de Active Directory (AD DS): </h2>
+
+  <p>
+    Ahora, necesita instalar los Servicios de dominio de Active Directory:
+Abra el Administrador del servidor.
+Haga clic en "Administrar" y luego seleccione "Agregar funciones y características".
+Siga el asistente y seleccione "Servicios de dominio de Active Directory" de la lista de funciones para instalar.
+   
+  </p>
+  <img src="img/1   (27.).jpeg" width="450">
+  <img src="img/1   (28.).jpeg" width="450">
+  <img src="img/1   (29.).jpeg" width="450">
+  <img src="img/1   (30.).jpeg" width="450">
+  <img src="img/1   (31.).jpeg" width="450">
+  <img src="img/1   (32.).jpeg" width="450">
+  
+  <h2>Promocionar el servidor a controlador de dominio</h2>
+  <p>
+    después de instalar AD DS, debe promover el servidor a controlador de dominio:
+
+En el Administrador del servidor, haga clic en "Promocionar este servidor a controlador de dominio" o utilice el comando "dcpromo".
+Elija agregar un nuevo bosque o unirse a uno existente, según su escenario.
+Siga el asistente y proporcione la información necesaria, como el nombre de dominio, las opciones del controlador de dominio y la contraseña del modo de restauración de servicios de directorio (DSRM).
+  </p>
+  <img src="img/1   (33.).jpeg" width="450">  
+  <img src="img/1   (34.).jpeg" width="450">
+  <img src="img/1   (35.).jpeg" width="450">
+  <h2>Complete la instalación de Active Directory</h2>
+  <p>
+    una vez que se complete el proceso de promoción, el servidor se reiniciará y se instalará Active Directory. Luego puede iniciar sesión con las credenciales de administrador del dominio.
+   
+  </p>
+  <img src="img/1   (36.).jpeg" width="450">
+  <img src="img/1   (37.).jpeg" width="450">
+  <img src="img/1   (38.).jpeg" width="450">
+  <img src="img/1   (39.).png" width="450">
+ 
+ 
+  <h2> VIDEO DEL PROYECTO</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/vbXVZKvO2F4?si=pD3cL_bVBVmKuhPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+</body>
+</html>
